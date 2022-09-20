@@ -40,7 +40,7 @@ while True:
             + "rotational_velocity : " + to_text(rotational_velocity) + "\n") 
         screen.write_text(10, 18, text, 1, white, black)
         if sample > previous_sample + threshold:
-            accumulator = 10
+            accumulator = accumulator + 1
         previous_sample = sample
         next_sample_time = now + sample_period
     rotational_velocity = max_velocity * min(accumulator, 1)

@@ -38,3 +38,41 @@ creeper = [
 display.set_panel("left", creeper_face)
 display.set_panel("right", creeper)
 display.set_panel("top", creeper)
+
+while True:
+    time.sleep(0.02)
+    speaker.tone(500, 0.1, 0.1, function=white_noise)
+    time.sleep(0.02)
+    speaker.play("creeper.mp3")
+
+# pig
+""" 
+a = pink
+b = hsv_colour(0.9, 0.4, 1)
+c = hsv_colour(0.9, 0.2, 1)
+d = hsv_colour(0.92, 0.5, 1)
+e = hsv_colour(0.9, 0.3, 1)
+f = hsv_colour(0.07, 0.6, 1)
+w = white
+
+creeper_face = [
+    [b,a,d,b,c,d,c,e],
+    [d,a,d,d,a,a,e,e],
+    [a,e,c,d,b,b,e,e],
+    [0,w,b,b,d,d,w,0],
+    [e,e,c,c,c,b,c,e],
+    [e,e,f,b,b,f,c,c],
+    [e,b,c,c,c,b,c,c],
+    [e,e,d,d,b,d,c,c]
+]
+creeper = [
+    [b,a,d,b,c,d,c,e],
+    [d,a,d,d,a,a,e,e],
+    [a,e,a,d,b,b,e,e],
+    [d,b,a,d,d,d,a,c],
+    [a,e,a,d,c,b,c,e],
+    [c,e,f,b,b,f,c,c],
+    [a,e,c,c,c,b,a,c],
+    [e,e,d,d,b,d,c,a]
+]
+ """
