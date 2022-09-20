@@ -40,10 +40,12 @@ display.set_panel("right", creeper)
 display.set_panel("top", creeper)
 
 while True:
-    time.sleep(0.02)
-    speaker.tone(500, 0.1, 0.1, function=white_noise)
-    time.sleep(0.02)
+    time.sleep(90)
+    # you will need to upload mp3 of creeper noise for this to work
     speaker.play("creeper.mp3")
+    # otherwise you can comment out the above and use this instead
+    #speaker.tone(500, 0.1, 0.1, function=white_noise)
+    #time.sleep(0.02)
 
 # pig
 """ 
