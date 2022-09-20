@@ -30,7 +30,7 @@ creeper = [
     [g2,g,g1,g2,g,g2,g,g1],
     [g1,g2,g3,g,g1,g3,g,g2],
     [g,g1,g3,g1,g2,g1,g3,g1],
-    [g3,g2,g1,g4,g4,g,g3,g1],
+    [g3,g2,g1,g1,g2,g,g3,g1],
     [g2,g1,g3,g1,g2,g1,g,g3],
     [g,g2,g,g3,g1,g,g1,g2],
     [g1,g,g1,g2,g1,g,g3,g]
@@ -43,7 +43,7 @@ while True:
     time.sleep(90)
     # you will need to upload mp3 of creeper noise for this to work
     speaker.play("creeper.mp3")
-    # otherwise you can comment out the above and use this instead
+    # otherwise you can comment out the above and use this
     #speaker.tone(500, 0.1, 0.1, function=white_noise)
     #time.sleep(0.02)
 
